@@ -11,8 +11,8 @@ class UsersController extends Controller
         return view('users.create');
     }
     public function show(User $user){
-        //$name='gaor';
-        //dd(compact('name'));
-        return view('users.show',compact('user'));
+        $name='gaor';
+        dd(compact('name'));
+        //return view('users.show',compact('user'));
     }
 }
