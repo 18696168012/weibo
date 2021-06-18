@@ -15,7 +15,7 @@ class SessionsController extends Controller
             'email' => 'required|email|max:255',
             'password' => 'required'
         ]);
-        dump($credentials);
+        //dump($credentials);
         if(Auth::attempt($credentials)){
             //登录成功
             session()->flash('success', '欢迎回来！');
